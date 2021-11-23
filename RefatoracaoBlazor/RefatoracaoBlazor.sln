@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefatoracaoBlazor", "RefatoracaoBlazor\RefatoracaoBlazor.csproj", "{E5BE5646-48BB-4A49-9CAB-64C66BE2A2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefatoracaoBlazor", "RefatoracaoBlazor\RefatoracaoBlazor.csproj", "{E5BE5646-48BB-4A49-9CAB-64C66BE2A2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefatoracaoBlazor.Test", "RefatoracaoBlazor.Test\RefatoracaoBlazor.Test.csproj", "{2F0508BE-0B33-4804-A1AE-A458EE45D0DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E5BE5646-48BB-4A49-9CAB-64C66BE2A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5BE5646-48BB-4A49-9CAB-64C66BE2A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5BE5646-48BB-4A49-9CAB-64C66BE2A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0508BE-0B33-4804-A1AE-A458EE45D0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0508BE-0B33-4804-A1AE-A458EE45D0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0508BE-0B33-4804-A1AE-A458EE45D0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0508BE-0B33-4804-A1AE-A458EE45D0DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
