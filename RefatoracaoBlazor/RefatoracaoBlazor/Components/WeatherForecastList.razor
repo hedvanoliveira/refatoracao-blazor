@@ -1,6 +1,10 @@
-﻿@if (Forecasts == null)
+﻿@if (Forecasts is null)
 {
     <p><em>Loading...</em></p>
+}
+else if(!Forecasts.Any())
+{
+    <p><em>Empty</em></p>
 }
 else
 {

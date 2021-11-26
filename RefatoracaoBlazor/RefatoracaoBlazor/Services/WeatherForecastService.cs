@@ -18,6 +18,8 @@ namespace RefatoracaoBlazor.Services
         {
             string url = _config.GetValue<string>("ApiWeatherForecast");
 
+            //await Task.Delay(5000);
+
             var forecasts = await _httpClient.GetFromJsonAsync<List<WeatherForecast>>(url);
 
             return forecasts;

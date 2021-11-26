@@ -1,0 +1,35 @@
+﻿@inherits TestContext
+
+@code{
+    [Fact]
+    public void WeatherForecastListLoading()
+    {
+        List<WeatherForecast?> weatherForecasts = new();
+        weatherForecasts = null;
+
+        var cut = Render(@<WeatherForecastList Forecasts="weatherForecasts" />);
+
+        cut.MarkupMatches(@<p><em>Loading...</em></p>);
+    }
+
+   [Fact]
+    public void WeatherForecastListEmpty()
+    {
+        List<WeatherForecast?> weatherForecasts = new();
+
+        var cut = Render(@<WeatherForecastList Forecasts="weatherForecasts" />);
+
+        cut.MarkupMatches(@<p><em>Empty</em></p>);
+    }
+
+    [Theory, AutoData]
+    public void WeatherForecastListCountTrTable(List<WeatherForecast> weatherForecasts)
+    {
+        var cut = Render(@<WeatherForecastList Forecasts="weatherForecasts" />);
+
+        int q = cut.FindAll(".table tbody tr").Count();
+
+        Assert.Equal(q, weatherForecasts.Count());
+
+    }
+}
